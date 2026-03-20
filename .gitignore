@@ -7,5 +7,6 @@ data/raw/hmnist_8_8_L.csv
 data/raw/hmnist_8_8_RGB.csv
 data/raw/hmnist_28_28_L.csv
 data/raw/hmnist_28_28_RGB.csv
+.idea
 
 .gitignore
