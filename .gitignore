@@ -2,3 +2,10 @@ data/raw/HAM10000_images_part_1
 data/raw/HAM10000_images_part_2
 data/raw/ham10000_images_part_1
 data/raw/ham10000_images_part_2
+data/raw/images
+data/raw/hmnist_8_8_L.csv
+data/raw/hmnist_8_8_RGB.csv
+data/raw/hmnist_28_28_L.csv
+data/raw/hmnist_28_28_RGB.csv
+
+.gitignore
