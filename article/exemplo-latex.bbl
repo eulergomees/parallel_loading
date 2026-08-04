@@ -1,0 +1,62 @@
+\begin{thebibliography}{11}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+
+\bibitem[Aach et~al.(2023)]{aach2023large}
+Aach, M. et~al. (2023).
+\newblock Large scale performance analysis of distributed deep learning frameworks.
+\newblock {\em Journal of Big Data}.
+
+\bibitem[Amdahl(1967)]{amdahl1967validity}
+Amdahl, G.~M. (1967).
+\newblock Validity of the single processor approach to achieving large scale computing capabilities.
+\newblock In {\em AFIPS Conference Proceedings}.
+
+\bibitem[Contributors(2026)]{pytorch}
+Contributors, P. (2026).
+\newblock Pytorch.
+\newblock URL \url{https://pytorch.org/}.
+\newblock 2026-03-31.
+
+\bibitem[Goodfellow et~al.(2016)Goodfellow, Bengio, e Courville]{goodfellow2016deep}
+Goodfellow, I., Bengio, Y., e Courville, A. (2016).
+\newblock {\em Deep Learning}.
+\newblock MIT Press.
+
+\bibitem[Krizhevsky et~al.(2012)Krizhevsky, Sutskever, e Hinton]{krizhevsky2012imagenet}
+Krizhevsky, A., Sutskever, I., e Hinton, G. (2012).
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em Advances in Neural Information Processing Systems}.
+
+\bibitem[LeCun et~al.(2015)LeCun, Bengio, e Hinton]{lecun2015deep}
+LeCun, Y., Bengio, Y., e Hinton, G. (2015).
+\newblock Deep learning.
+\newblock {\em Nature}, 521\penalty0 (7553):\penalty0 436--444.
+
+\bibitem[Mohan et~al.(2020)]{mohan2020analyzing}
+Mohan, J. et~al. (2020).
+\newblock Analyzing and mitigating data stalls in dnn training.
+\newblock {\em arXiv preprint arXiv:2007.06775}.
+
+\bibitem[{Project Jupyter}(2026)]{jupyter}
+{Project Jupyter} (2026).
+\newblock Project {J}upyter | {H}ome.
+\newblock URL \url{https://jupyter.org/}.
+
+\bibitem[{Python Software Foundation}(2026)]{python}
+{Python Software Foundation} (2026).
+\newblock Welcome to {P}ython.org.
+\newblock URL \url{https://www.python.org/}.
+
+\bibitem[Sun et~al.(2022)]{sun2022solar}
+Sun, B. et~al. (2022).
+\newblock Solar: A highly optimized data loading framework.
+\newblock {\em arXiv preprint arXiv:2211.00224}.
+
+\bibitem[Svogor et~al.(2022)]{svogor2022profiling}
+Svogor, I. et~al. (2022).
+\newblock Profiling and improving the pytorch dataloader for high-latency storage.
+\newblock {\em arXiv preprint arXiv:2211.04908}.
+
+\end{thebibliography}
