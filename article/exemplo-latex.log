@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.7.4)  4 AUG 2026 10:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.7.4)  5 AUG 2026 15:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -235,20 +235,20 @@ Package babel Info: 'brazil' activates 'portuges' shorthands.
 )
 \openout1 = `exemplo-latex.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -295,142 +295,147 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 38.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 43.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 <sbpo2026-header-logo.png, id=1, 235.1184pt x 127.31564pt>
 File: sbpo2026-header-logo.png Graphic file (type png)
 <use sbpo2026-header-logo.png>
-Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 79.
+Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 91.
 (pdftex.def)             Requested size: 117.5589pt x 63.65765pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} <./sbpo2026-header-logo.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
+File: sbpo2026-header-logo.png Graphic file (type png)
+<use sbpo2026-header-logo.png>
+Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 100.
+(pdftex.def)             Requested size: 117.5589pt x 63.65765pt.
+ [2]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 101.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 101.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 File: sbpo2026-header-logo.png Graphic file (type png)
 <use sbpo2026-header-logo.png>
-Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 108.
+Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 129.
 (pdftex.def)             Requested size: 117.5589pt x 63.65765pt.
- [2]
-<images/dataset.png, id=16, 419.166pt x 315.0972pt>
+ [3]
+<images/dataset.png, id=19, 419.166pt x 315.0972pt>
 File: images/dataset.png Graphic file (type png)
 <use images/dataset.png>
-Package pdftex.def Info: images/dataset.png  used on input line 121.
+Package pdftex.def Info: images/dataset.png  used on input line 142.
 (pdftex.def)             Requested size: 303.18413pt x 227.91313pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 130.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 151.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Overfull \hbox (68.70857pt too wide) in paragraph at lines 130--131
+Overfull \hbox (68.70857pt too wide) in paragraph at lines 151--152
 []\T1/ptm/m/n/10.95 As ima-gens pas-sa-ram por um pro-cesso de pré-processamento uti-li-zando \T1/pcr/m/n/10.95 torchvision.transforms\T1/ptm/m/n/10.95 ,
  []
 
 File: sbpo2026-header-logo.png Graphic file (type png)
 <use sbpo2026-header-logo.png>
-Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 133.
+Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 154.
 (pdftex.def)             Requested size: 117.5589pt x 63.65765pt.
-[3 <./images/dataset.png>]
+[4 <./images/dataset.png>]
 File: sbpo2026-header-logo.png Graphic file (type png)
 <use sbpo2026-header-logo.png>
-Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 179.
-(pdftex.def)             Requested size: 117.5589pt x 63.65765pt.
- [4]
-File: sbpo2026-header-logo.png Graphic file (type png)
-<use sbpo2026-header-logo.png>
-Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 228.
+Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 200.
 (pdftex.def)             Requested size: 117.5589pt x 63.65765pt.
  [5]
-<images/TrxN_E.png, id=27, 419.166pt x 328.8285pt>
+File: sbpo2026-header-logo.png Graphic file (type png)
+<use sbpo2026-header-logo.png>
+Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 249.
+(pdftex.def)             Requested size: 117.5589pt x 63.65765pt.
+ [6]
+<images/TrxN_E.png, id=30, 419.166pt x 328.8285pt>
 File: images/TrxN_E.png Graphic file (type png)
 <use images/TrxN_E.png>
-Package pdftex.def Info: images/TrxN_E.png  used on input line 235.
+Package pdftex.def Info: images/TrxN_E.png  used on input line 256.
 (pdftex.def)             Requested size: 303.18413pt x 237.84514pt.
 File: sbpo2026-header-logo.png Graphic file (type png)
 <use sbpo2026-header-logo.png>
-Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 244.
+Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 265.
 (pdftex.def)             Requested size: 117.5589pt x 63.65765pt.
- [6 <./images/TRxN_E.png>]
-<images/TxB_E.png, id=32, 417.7206pt x 328.8285pt>
+ [7 <./images/TRxN_E.png>]
+<images/TxB_E.png, id=36, 417.7206pt x 328.8285pt>
 File: images/TxB_E.png Graphic file (type png)
 <use images/TxB_E.png>
-Package pdftex.def Info: images/TxB_E.png  used on input line 248.
+Package pdftex.def Info: images/TxB_E.png  used on input line 269.
 (pdftex.def)             Requested size: 303.18413pt x 238.663pt.
-<images/TxN_E.png, id=33, 417.7206pt x 328.8285pt>
+<images/TxN_E.png, id=37, 417.7206pt x 328.8285pt>
 File: images/TxN_E.png Graphic file (type png)
 <use images/TxN_E.png>
-Package pdftex.def Info: images/TxN_E.png  used on input line 260.
+Package pdftex.def Info: images/TxN_E.png  used on input line 281.
 (pdftex.def)             Requested size: 303.18413pt x 238.663pt.
 
-Overfull \hbox (16.81664pt too wide) in paragraph at lines 266--267
+Overfull \hbox (16.81664pt too wide) in paragraph at lines 287--288
 []\T1/ptm/m/n/10.95 Por fim, a Fi-gura 4[] de-mons-tra a re-du-ção do tempo por época com o au-mento de \T1/ptm/m/it/10.95 num_workerss\T1/ptm/m/n/10.95 ,
  []
 
 File: sbpo2026-header-logo.png Graphic file (type png)
 <use sbpo2026-header-logo.png>
-Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 271.
+Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 292.
 (pdftex.def)             Requested size: 117.5589pt x 63.65765pt.
-[7
+[8
 
  <./images/TxB_E.png> <./images/TxN_E.png>]
-Overfull \hbox (31.06172pt too wide) in paragraph at lines 272--273
+Overfull \hbox (31.06172pt too wide) in paragraph at lines 293--294
 []\T1/ptm/m/n/10.95 De forma ge-ral, os re-sul-ta-dos in-di-cam que, para o hard-ware ana-li-sado, o pa-râ-me-tro \T1/ptm/m/it/10.95 num_workerss
  []
 
-<images/TRxN_V.jpeg, id=40, 573.14125pt x 456.70625pt>
+<images/TRxN_V.jpeg, id=43, 573.14125pt x 456.70625pt>
 File: images/TRxN_V.jpeg Graphic file (type jpg)
 <use images/TRxN_V.jpeg>
-Package pdftex.def Info: images/TRxN_V.jpeg  used on input line 325.
+Package pdftex.def Info: images/TRxN_V.jpeg  used on input line 346.
 (pdftex.def)             Requested size: 303.18413pt x 241.59322pt.
 File: sbpo2026-header-logo.png Graphic file (type png)
 <use sbpo2026-header-logo.png>
-Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 329.
+Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 350.
 (pdftex.def)             Requested size: 117.5589pt x 63.65765pt.
-[8]
+[9]
 File: sbpo2026-header-logo.png Graphic file (type png)
 <use sbpo2026-header-logo.png>
-Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 336.
+Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 357.
 (pdftex.def)             Requested size: 117.5589pt x 63.65765pt.
- [9 <./images/TRxN_V.jpeg>]
-<images/TxB_V.jpeg, id=47, 580.1675pt x 456.70625pt>
+ [10 <./images/TRxN_V.jpeg>]
+<images/TxB_V.jpeg, id=50, 580.1675pt x 456.70625pt>
 File: images/TxB_V.jpeg Graphic file (type jpg)
 <use images/TxB_V.jpeg>
-Package pdftex.def Info: images/TxB_V.jpeg  used on input line 340.
+Package pdftex.def Info: images/TxB_V.jpeg  used on input line 361.
 (pdftex.def)             Requested size: 303.18413pt x 238.66634pt.
-<images/TxN_V.jpeg, id=48, 566.115pt x 456.70625pt>
+<images/TxN_V.jpeg, id=51, 566.115pt x 456.70625pt>
 File: images/TxN_V.jpeg Graphic file (type jpg)
 <use images/TxN_V.jpeg>
-Package pdftex.def Info: images/TxN_V.jpeg  used on input line 353.
+Package pdftex.def Info: images/TxN_V.jpeg  used on input line 374.
 (pdftex.def)             Requested size: 303.18413pt x 244.59676pt.
 File: sbpo2026-header-logo.png Graphic file (type png)
 <use sbpo2026-header-logo.png>
-Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 362.
+Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 383.
 (pdftex.def)             Requested size: 117.5589pt x 63.65765pt.
- [10
+ [11
 
  <./images/TxB_V.jpeg> <./images/TxN_V.jpeg>]
 File: sbpo2026-header-logo.png Graphic file (type png)
 <use sbpo2026-header-logo.png>
-Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 392.
+Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 413.
 (pdftex.def)             Requested size: 117.5589pt x 63.65765pt.
- [11] (./exemplo-latex.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 398--1
+ [12] (./exemplo-latex.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 420--1
 
  []
 
 )
 File: sbpo2026-header-logo.png Graphic file (type png)
 <use sbpo2026-header-logo.png>
-Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 403.
+Package pdftex.def Info: sbpo2026-header-logo.png  used on input line 425.
 (pdftex.def)             Requested size: 117.5589pt x 63.65765pt.
- [12] (./exemplo-latex.aux)
+ [13] (./exemplo-latex.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -439,16 +444,16 @@ L3 programming layer <2026-01-19>
 Here is how much of TeX's memory you used:
  7396 strings out of 469421
  120843 string characters out of 5467710
- 528743 words of memory out of 5000000
+ 529744 words of memory out of 5000000
  35943 multiletter control sequences out of 15000+600000
  658863 words of font info for 79 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
  70i,15n,79p,743b,465s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on exemplo-latex.pdf (12 pages, 541012 bytes).
+Output written on exemplo-latex.pdf (13 pages, 541683 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex exemplo-latex"] 1785851577.71748 "exemplo-latex.aux" "exemplo-latex.bbl" "exemplo-latex" 1785851578.28734 0
+["bibtex exemplo-latex"] 1785953932.27656 "exemplo-latex.aux" "exemplo-latex.bbl" "exemplo-latex" 1785954116.50828 0
   "./exemplo-latex.bib" 1785800448 2153 30a74ae4bab1270350f83abd6d3c4719 ""
   "./sbpo.bst" 1785800448 26446 94719ae850b5558d57f3e7dce4e4eca3 ""
-  "exemplo-latex.aux" 1785851578.19589 5716 385dfef072543a3c7210b770fc0e55e0 "pdflatex"
+  "exemplo-latex.aux" 1785954116.42007 5718 c1f2fa30aa64ce5b02e9a361e3da7898 "pdflatex"
   (generated)
   "exemplo-latex.bbl"
   "exemplo-latex.blg"
   (rewritten before read)
-["pdflatex"] 1785851577.7527 "/home/euler/Workspace/Python/parallel_loading/article/exemplo-latex.tex" "exemplo-latex.pdf" "exemplo-latex" 1785851578.28745 0
+["pdflatex"] 1785954115.99119 "/home/euler/Workspace/Python/parallel_loading/article/exemplo-latex.tex" "exemplo-latex.pdf" "exemplo-latex" 1785954116.50839 0
   "/etc/texmf/web2c/texmf.cnf" 1783172025.60994 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/euler/Workspace/Python/parallel_loading/article/exemplo-latex.tex" 1785851576.94038 29306 e4316601b97b55c692915e65868bc158 ""
+  "/home/euler/Workspace/Python/parallel_loading/article/exemplo-latex.tex" 1785954115.85354 30549 c88766bd4c6a505da6333829126ef81f ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1136768653 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -100,9 +100,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1769369718 41603 27f93b3067076450172040dcd57ca8b3 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1783172033 5418024 d27383b0a8fadef44c19c8c5a157ff8e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1783178505 2266786 0ff68d930e16f409d4919001e8237083 ""
-  "exemplo-latex.aux" 1785851578.19589 5716 385dfef072543a3c7210b770fc0e55e0 "pdflatex"
-  "exemplo-latex.bbl" 1785851577.75008 2315 6a0edbf2df60605f5b9ca6aa13046793 "bibtex exemplo-latex"
-  "exemplo-latex.tex" 1785851576.94038 29306 e4316601b97b55c692915e65868bc158 ""
+  "exemplo-latex.aux" 1785954116.42007 5718 c1f2fa30aa64ce5b02e9a361e3da7898 "pdflatex"
+  "exemplo-latex.bbl" 1785953932.30824 2315 6a0edbf2df60605f5b9ca6aa13046793 "bibtex exemplo-latex"
+  "exemplo-latex.tex" 1785954115.85354 30549 c88766bd4c6a505da6333829126ef81f ""
   "images/TRxN_E.png" 1785800449 27304 e84dc89c366cf1b05b5bde395a943c8b ""
   "images/TRxN_V.jpeg" 1785800449 23305 83f8dd7d7be0cf9b8da4aa39c127cc0c ""
   "images/TxB_E.png" 1785800449 25355 9b1a1d50384f151f63360d706ee61ed5 ""
