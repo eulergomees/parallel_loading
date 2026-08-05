@@ -75,7 +75,7 @@
 
 \vspace{8mm}
 \begin{resumo}
-Este trabalho analisa como o carregamento paralelo de dados afeta o treinamento de redes neurais para classificação de imagens médicas. Avalia o impacto de num\_workerss e batch\_size em tempo, throughput e acurácia, usando o dataset HAM10000 em um desktop e no Google Colab. Os resultados mostram que o paralelismo pode reduzir significativamente o tempo em até mais de 5 vezes, mas há saturação devido a limitações de hardware. O batch\_size teve impacto menor. Conclui-se que a escolha adequada desses parâmetros e do hardware é essencial para otimizar o treinamento.
+Este trabalho analisa como o carregamento paralelo de dados afeta o treinamento de redes neurais artificiais (RNA) para classificação de imagens médicas. Avalia o impacto de num\_workerss e batch\_size em tempo, throughput e acurácia, usando o dataset HAM10000 em um desktop e no Google Colab. Os resultados mostram que o paralelismo pode reduzir significativamente o tempo em até mais de 5 vezes, mas há saturação devido a limitações de hardware. O batch\_size teve impacto menor. Conclui-se que a escolha adequada desses parâmetros e do hardware é essencial para otimizar o treinamento.
 \end{resumo}
 
 \bigskip
@@ -100,7 +100,7 @@ Convolutional Neural Networks, Parallelism, Data Loading, Medical Images.
 \newpage
 \section{Introdução} 
 
-O avanço recente das técnicas de aprendizado de máquina, em especial das redes neurais profundas, tem impulsionado aplicações relevantes na área da saúde, como a classificação automática de imagens médicas. Modelos baseados em redes neurais convolucionais (CNNs) têm apresentado alto desempenho em tarefas como detecção de doenças em exames de imagem, contribuindo para apoio ao diagnóstico clínico \cite{lecun2015deep, krizhevsky2012imagenet}.
+O avanço recente das técnicas de aprendizado de máquina, em especial das redes neurais profundas (DNN, do inglês, \textit{deep neural network}), tem impulsionado aplicações relevantes na área da saúde, como a classificação automática de imagens médicas. Modelos baseados em redes neurais convolucionais (CNN, do inglês, \textit{convolutional neural network}) têm apresentado alto desempenho em tarefas como detecção de doenças em exames de imagem, contribuindo para apoio ao diagnóstico clínico \cite{lecun2015deep, krizhevsky2012imagenet}.
 
 Entretanto, o treinamento desses modelos envolve grande volume de dados e elevado custo computacional, tornando-se um desafio relevante em termos de desempenho e eficiência. Uma parte significativa desse custo está associada ao carregamento e pré-processamento dos dados, que pode se tornar um gargalo no pipeline de treinamento \cite{goodfellow2016deep}.
 
@@ -108,30 +108,30 @@ Nesse contexto, técnicas de paralelismo têm sido amplamente exploradas para re
 
 A análise do impacto do paralelismo pode ser fundamentada pela Lei de Amdahl, que estabelece limites teóricos para o ganho de desempenho em sistemas paralelos, considerando a fração do código que permanece sequencial \cite{amdahl1967validity}. De acordo com essa lei, o ganho obtido com paralelização é limitado pela parte não paralelizável do processo, o que torna essencial a análise experimental do comportamento do sistema.
 
-Dessa forma, este trabalho tem como objetivo investigar como o carregamento paralelo de dados influencia o desempenho do treinamento de redes neurais convolucionais aplicadas à classificação de imagens médicas. Para isso, são conduzidos experimentos variando o número de processos de carregamento (\textit{num\_workerss}) e o tamanho do lote (\textit{batch\_size}), avaliando métricas como tempo de treinamento, \textit{throughput} e acurácia do modelo.
+Dessa forma, este trabalho tem como objetivo investigar como o carregamento paralelo de dados influencia o desempenho do treinamento de CNN aplicadas à classificação de imagens médicas. Para isso, são conduzidos experimentos variando o número de processos de carregamento (\textit{num\_workerss}) e o tamanho do lote (\textit{batch\_size}), avaliando métricas como tempo de treinamento, \textit{throughput} e acurácia do modelo.
 
-Como principal contribuição, este trabalho apresenta uma análise experimental detalhada do impacto do paralelismo no carregamento de dados em diferentes ambientes computacionais, evidenciando limites práticos e diretrizes para otimização do treinamento de redes neurais.
+Como principal contribuição, este trabalho apresenta uma análise experimental detalhada do impacto do paralelismo no carregamento de dados em diferentes ambientes computacionais, evidenciando limites práticos e diretrizes para otimização do treinamento de RNA.
 
 \section{Trabalhos Relacionados}
 
 
 % Relacionar a Lei de Amdahl 
 
-O desempenho do treinamento de redes neurais profundas tem sido amplamente estudado, especialmente no contexto de grandes volumes de dados e alto custo computacional. Estudos recentes mostram que, além do modelo em si, o pipeline de dados exerce papel fundamental no tempo total de treinamento, podendo se tornar um gargalo significativo \cite{mohan2020analyzing}.
+O desempenho do treinamento de DNN tem sido amplamente estudado, especialmente no contexto de grandes volumes de dados e alto custo computacional. Estudos recentes mostram que, além do modelo em si, o pipeline de dados exerce papel fundamental no tempo total de treinamento, podendo se tornar um gargalo significativo \cite{mohan2020analyzing}.
 
 Nesse sentido, diversos trabalhos investigam o impacto do carregamento de dados no desempenho de modelos de aprendizado profundo. \cite{svogor2022profiling} analisam o funcionamento do DataLoader do PyTorch em ambientes com alta latência de armazenamento, demonstrando que otimizações no carregamento podem reduzir significativamente o tempo de treinamento, alcançando melhorias de até 12 vezes em determinados cenários. De forma semelhante, \cite{sun2022solar} propõem um novo mecanismo de carregamento de dados para treinamento distribuído, obtendo ganhos expressivos de desempenho ao otimizar o acesso e o paralelismo no sistema de I/O.
 
-Além disso, \cite{mohan2020analyzing} demonstram que o tempo de treinamento de redes neurais pode ser fortemente impactado por períodos de espera por dados, conhecidos como \textit{data stalls}, evidenciando a importância de otimizar o pipeline de entrada. Os autores mostram que, em alguns casos, o tempo de espera por dados pode dominar o tempo total de execução.
+Além disso, \cite{mohan2020analyzing} demonstram que o tempo de treinamento de RNA pode ser fortemente impactado por períodos de espera por dados, conhecidos como \textit{data stalls}, evidenciando a importância de otimizar o pipeline de entrada. Os autores mostram que, em alguns casos, o tempo de espera por dados pode dominar o tempo total de execução.
 
 No contexto de frameworks de aprendizado profundo, estudos como o de \cite{aach2023large} analisam o desempenho de diferentes abordagens de treinamento distribuído, destacando a importância da paralelização para lidar com grandes volumes de dados e melhorar a escalabilidade dos modelos.
 
 Especificamente no PyTorch, o parâmetro \textit{num\_workerss} do DataLoader permite o carregamento paralelo de dados por meio de múltiplos processos. O uso adequado desse parâmetro pode aumentar o throughput do sistema ao permitir que o carregamento e o processamento de dados ocorram simultaneamente com o treinamento do modelo \cite{svogor2022profiling}. No entanto, o aumento do número de processos também pode introduzir overhead e competição por recursos, o que pode limitar os ganhos de desempenho.
 
-Dessa forma, a literatura evidencia que o carregamento de dados é um componente crítico no treinamento de redes neurais profundas, sendo necessário encontrar um equilíbrio entre paralelismo e custo computacional. Este trabalho se insere nesse contexto, investigando experimentalmente o impacto do parâmetro \textit{num\_workerss} e do tamanho do lote no desempenho do treinamento de modelos de classificação de imagens médicas.
+Dessa forma, a literatura evidencia que o carregamento de dados é um componente crítico no treinamento de DNN, sendo necessário encontrar um equilíbrio entre paralelismo e custo computacional. Este trabalho se insere nesse contexto, investigando experimentalmente o impacto do parâmetro \textit{num\_workerss} e do tamanho do lote no desempenho do treinamento de modelos de classificação de imagens médicas.
 
 \section{Metodologia}
 
-A metodologia adotada neste trabalho tem como objetivo avaliar o impacto do paralelismo no carregamento de dados durante o treinamento de redes neurais convolucionais. Para isso, foram conduzidos experimentos controlados variando o número de workers do \textit{DataLoader} e o tamanho do \textit{batch}, analisando seu efeito no desempenho do treinamento.
+A metodologia adotada neste trabalho tem como objetivo avaliar o impacto do paralelismo no carregamento de dados durante o treinamento de CNN. Para isso, foram conduzidos experimentos controlados variando o número de workers do \textit{DataLoader} e o tamanho do \textit{batch}, analisando seu efeito no desempenho do treinamento.
 
 \subsection{Preparação dos Dados}
 
@@ -396,7 +396,7 @@ Esses resultados demonstram que a eficiência do paralelismo está diretamente r
 
 \section{Conclusão}
 
-Este trabalho investigou o impacto do carregamento paralelo de dados no desempenho do treinamento de redes neurais convolucionais aplicadas à classificação de imagens médicas. Através de experimentos controlados, foi possível analisar a influência dos parâmetros \textit{num\_workerss} e \textit{batch\_size} em diferentes configurações de hardware.
+Este trabalho investigou o impacto do carregamento paralelo de dados no desempenho do treinamento de CNN aplicadas à classificação de imagens médicas. Através de experimentos controlados, foi possível analisar a influência dos parâmetros \textit{num\_workerss} e \textit{batch\_size} em diferentes configurações de hardware.
 
 Os resultados demonstraram que o uso de múltiplos \textit{workers} no \textit{DataLoader} pode reduzir significativamente o tempo de treinamento, aumentando o \textit{throughput} do sistema de forma expressiva. Em particular, no hardware de maior desempenho, observou-se ganhos superiores a 5 vezes quando comparado à execução sequencial. No entanto, também foi identificado um ponto de saturação, no qual o aumento adicional de \textit{workers} resulta em ganhos marginais, evidenciando limitações impostas por recursos não paralelizáveis, conforme previsto pela Lei de Amdahl.
 
@@ -404,7 +404,7 @@ Por outro lado, a variação do \textit{batch\_size} apresentou impacto menos si
 
 Além disso, os experimentos realizados em diferentes hardwares evidenciam que o ganho obtido com paralelismo depende diretamente das características da máquina, como número de núcleos de CPU, capacidade de memória e desempenho de I/O.
 
-Dessa forma, conclui-se que a otimização do pipeline de dados e o \textit{hardware} utilizado são fatores essenciais para o treinamento eficiente de redes neurais profundas, sendo o ajuste adequado do parâmetro \textit{num\_workerss} uma estratégia simples, porém altamente eficaz, para a melhoria do desempenho em pipelines de treinamento baseados em aprendizado profundo.
+Dessa forma, conclui-se que a otimização do pipeline de dados e o \textit{hardware} utilizado são fatores essenciais para o treinamento eficiente de DNN, sendo o ajuste adequado do parâmetro \textit{num\_workerss} uma estratégia simples, porém altamente eficaz, para a melhoria do desempenho em pipelines de treinamento baseados em aprendizado profundo.
 
 Como trabalhos futuros, sugere-se a investigação de técnicas mais avançadas de paralelismo, como pré-busca (\textit{prefetching}), uso de memória compartilhada, armazenamento em SSD de alta velocidade e treinamento distribuído em múltiplas GPUs, bem como a avaliação em datasets maiores e modelos mais complexos.
 
